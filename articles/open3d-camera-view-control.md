@@ -263,4 +263,4 @@ o3d.visualization.draw_geometries_with_key_callbacks([pcd],key_callback)
 
 しかし、その場でカメラを30°回したいなどの一部の表現はViewControlでは難しいという問題があります。その場合は、ピンホールカメラモデルを使ってカメラの位置を表現する手法が別に存在しているのでそちらを使うことができます。
 
-
+https://zenn.dev/fastriver/articles/open3d-camera-pinhole
