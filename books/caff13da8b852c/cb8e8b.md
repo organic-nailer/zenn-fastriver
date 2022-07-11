@@ -73,7 +73,7 @@ void main() {
 }
 ```
 
-[DartPadで見る](https://dartpad.dev/4cfa955c67d4bd51e96e9789f002669)
+[DartPadで見る](https://dartpad.dev/4cfa955c67d4bd51e96e9789f002669c)
 
 ## 変数・代入
 
@@ -107,7 +107,7 @@ DartはC言語やJavaなどと同じように
 
 変数名には半角の英数字と一部の記号が使えるが、先頭を数字にすることはできない。
 
-変数の種類と変数名の間には半角スペースを空けよう(くっついていると一つの単語だと解釈されてしまう)
+変数の種類と変数名の間には半角スペースを空ける(くっついていると一つの単語だと解釈されてしまう)
 
 変数の右側に存在する"="は代入演算子と呼ばれ、数学におけるイコールとは意味が違うので注意が必要。代入演算子は右にある値を左にある変数に代入するという意味がある。代入に関しては、「age」と書かれた箱の中に19という数字を入れる、のようなイメージでとりあえずよい。
 
@@ -191,6 +191,19 @@ else if([条件式2]) { ... }
 15 <= 18 // -> true
 ```
 
+## [コラム] 式と文
+
+プログラムを書くときには、文法的に「式」と呼ばれる部分と「文」と呼ばれる部分が存在する。先程のif文は文であるし、条件式は式である。
+
+- 式(Expression): 中にある数式や関数を評価して、最後に何かの値を結果として出すもの
+  - 算数の式のように最後まで解くことができる
+  - 例: 条件式(結果は真偽値), 算術演算式(結果は数字等)
+- 文(Statement): プログラムで行う手続きを記述するもの
+  - セミコロンで終わる行や、中括弧{}で括られた部分が1つの文
+  - 例: if文, 変数宣言, 代入
+
+多くの言語(Dart含む)では式と文がはっきり区別されていて、これによりプログラムの要素が書ける場所、というのが制限される。例えばif文の()の中は式を入れなければならないため、そこに代入文を書くことはできない。
+
 ## 繰り返し
 
 「for文」を使って繰り返し同じ処理を行うことができる
@@ -267,16 +280,14 @@ String b = a;
 
 Day2を読む前に必要な事項です
 
- * Flutter SDKをインストールする
-   * [ドキュメント](https://flutter.dev/docs/get-started/install)
-   * [Windowsでのやり方(YouTube)](https://youtu.be/akHLIqPzVOI)
-   * [Macでのやり方(YouTube)](https://youtu.be/oqgymJKdvHE)
- * Android Studioをインストールする
-   * [ドキュメント](https://developer.android.com/studio/install?hl=ja)
-   * [やりかた(YouTube)](https://youtu.be/9hhW30QGKww)
- * Android Studioにflutter pluginを入れる
-   * [やりかた](https://kokensha.xyz/android/android-studio-flutter-plugin-setup/)
- * FlutterのChannelをbetaに変更する
-   * [ここ](https://flutter.dev/docs/get-started/web)参照
- * Chromeをインストールする
-   * [HP](https://www.google.com/chrome/)
+* Flutterをインストールする
+  * [公式ドキュメント](https://flutter.dev/docs/get-started/install)
+  * [簡単インストーラ](https://github.com/YazeedAlKhalaf/Flutter_Installer/releases/tag/v0.0.8)
+    * ページ下のAssetsから自分のOSのzipをダウンロード・実行
+    * AndroidStudioはインストールしないほうがよい(古いので)
+* VSCodeをインストールする
+  * [公式ダウンロードページ](https://azure.microsoft.com/ja-jp/products/visual-studio-code/)
+  * Flutterの拡張機能を入れる
+* Chromeをインストールする
+  * Windowsの人はEdgeでも動くのでやらなくてもよし
+  * [HP](https://www.google.com/chrome/)
