@@ -1,0 +1,19 @@
+title: "FlutterでWebアプリ開発入門"
+summary: |-
+  Flutter Webを利用したWebアプリ開発の入門を講義したときの資料を再編しました。5日分で演習を中心にしながら簡単でモダンなWebアプリの作成を目標にします。
+
+  対象: Webアプリに興味がある, Flutterに興味がある, 初学者/Flutter初心者
+topics:
+  - "flutter"
+  - "dart"
+  - "web"
+published: true
+price: 0
+toc_depth: 2
+chapters:
+  - "8393eb"
+  - "cb8e8b"
+  - "a15f24"
+  - "8f04f2"
+  - "612906"
+  - "04a5ae"
