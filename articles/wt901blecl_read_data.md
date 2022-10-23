@@ -150,7 +150,7 @@ def notification_handler(sender, data: bytearray):
 
 async def run(address, loop):
     async with BleakClient(address, loop=loop) as client:
-        x = await client.is_connected()
+        x = client.is_connected
         print("Connected: {0}".format(x))
         await client.start_notify("0000ffe4-0000-1000-8000-00805f9a34fb", notification_handler)
 
